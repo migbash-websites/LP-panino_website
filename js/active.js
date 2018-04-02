@@ -82,11 +82,18 @@
         });
     }
 
-    // :: 4.0 ScrollUp Active Code
+    // :: 4.0 ScrollUp/Down Active Code
     if ($.fn.scrollUp) {
         $.scrollUp({
             scrollSpeed: 1500,
             scrollText: '<i class="fa fa-angle-up"></i>'
+        });
+    }
+
+    if ($.fn.scrollDown) {
+        $.scrollDown({
+            scrollSpeed: 1500,
+            scrollText: '<i class="fas fa-angle-double-down fa-5x"></i>'
         });
     }
 
@@ -131,7 +138,7 @@
 
     // :: 8.0 Sticky Active Code
     $window.on('scroll', function () {
-        if ($window.scrollTop() > 48) {
+        if ($window.scrollTop() > 20) {
             $('.header_area').addClass('sticky slideInDown');
         } else {
             $('.header_area').removeClass('sticky slideInDown');
@@ -145,4 +152,38 @@
         });
     });
 
+    // :: 10.0 Switch Between Customer/Business Active code
+    $("#arrow-one").hover(function(){
+        $(".fa-angle-down").css("display", "none");
+        $('.fa-angle-double-down').css("display", "block");
+      } , function(){
+          $(".fa-angle-down").css("display", "block");
+          $('.fa-angle-double-down').css("display", "none");
+          });
+
 })(jQuery);
+
+      // Javascript
+
+      // --------- How-it-works page -------------
+
+
+      // :: 11.0 Switch Between Customer/Business Active code
+
+      function Business_Page() {
+          if (document.getElementById("business-faq").style.display === "none") {
+              document.getElementById("customer-video").style.display = "none";
+              document.getElementById("customer-faq").style.display = "none";
+              document.getElementById("business-video").style.display = "block";
+              document.getElementById("business-faq").style.display = "block";
+          }
+      }
+
+      function Customer_Page() {
+          if (document.getElementById("customer-faq").style.display === "none") {
+              document.getElementById("business-faq").style.display = "none";
+              document.getElementById("business-video").style.display = "none";
+              document.getElementById("customer-video").style.display = "block";
+              document.getElementById("customer-faq").style.display = "block";
+          }
+      }

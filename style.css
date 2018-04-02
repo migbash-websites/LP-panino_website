@@ -1,42 +1,16 @@
-/* --------------------------
-:: Template Name: Colorlib App - App Landing Page
-:: Template Author: Colorlib
-:: Template Author URI: https://colorlib.com/
-:: Description: Colorlib is a One Page based App Landing Template. It's very clean, creative & beautiful. It's super     responsive & ultra light.
-:: Tags: Colorlib, App Landing, Apps, Responsive App Landing, Bootstrap 4, Free Theme, Free HTML Template, HTML5 Template etc.
-:: Version: v1.0
-:: Created: 11/03/2017
--------------------------- */
-
-/* --- [Master Stylesheet] ----
-:: 1.0 Base CSS Start
-:: 2.0 Header Area CSS
-:: 3.0 Wellcome Area CSS
-:: 4.0 Special Area CSS
-:: 5.0 Features Area CSS
-:: 6.0 Video Area CSS
-:: 7.0 Cool Facts Area CSS
-:: 8.0 Screenshots Area CSS
-:: 9.0 Pricing Plan Area CSS
-:: 10.0 Testimonials Area CSS
-:: 11.0 CTA Area CSS Start
-:: 12.0 Team Area CSS Start
-:: 13.0 Contact Area CSS Start
-:: 14.0 Footer Area CSS Start
--------------------------- */
-
 @import url('https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans');
 @import 'css/bootstrap.min.css';
 @import 'css/animate.css';
 @import 'css/magnific-popup.css';
 @import 'css/owl.carousel.min.css';
 @import 'css/slick.css';
-@import 'css/font-awesome.min.css';
+/* Icons */
+@import 'css/fontawesome-all.css';
 @import 'css/themify-icons.css';
 @import 'css/ionicons.min.css';
 
 /* --------------------------
-:: 1.0 Base CSS Start
+Base CSS for Pages 1,2
 -------------------------- */
 
 * {
@@ -45,147 +19,16 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  position: relative;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Cabin', sans-serif;
-    font-weight: 400;
-    color: #000;
-    line-height: 1.2;
-}
-
-.section_padding_100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.section_padding_100_50 {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-.section_padding_100_70 {
-    padding-top: 100px;
-    padding-bottom: 70px;
-}
-
-.section_padding_50 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.section_padding_50_20 {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-.section_padding_150 {
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.section_padding_200 {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.section_padding_0_100 {
-    padding-top: 0;
-    padding-bottom: 100px;
-}
-
-.section_padding_70 {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.section_padding_0_50 {
-    padding-top: 0;
-    padding-bottom: 50px;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.mt-15 {
-    margin-top: 15px;
-}
-
-.mt-30 {
-    margin-top: 30px;
-}
-
-.mt-40 {
-    margin-top: 40px;
-}
-
-.mt-50 {
-    margin-top: 50px;
-}
-
-.mt-100 {
-    margin-top: 100px;
-}
-
-.mt-150 {
-    margin-top: 150px;
-}
-
-.mr-15 {
-    margin-right: 15px;
-}
-
-.mr-30 {
-    margin-right: 30px;
-}
-
-.mr-50 {
-    margin-right: 50px;
-}
-
-.mr-100 {
-    margin-right: 100px;
-}
-
-.mb-15 {
-    margin-bottom: 15px;
-}
-
-.mb-30 {
-    margin-bottom: 30px;
-}
-
-.mb-50 {
-    margin-bottom: 50px;
-}
-
-.mb-100 {
-    margin-bottom: 100px;
-}
-
-.ml-15 {
-    margin-left: 15px;
-}
-
-.ml-30 {
-    margin-left: 30px;
-}
-
-.ml-50 {
-    margin-left: 50px;
-}
-
-.ml-100 {
-    margin-left: 100px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.2;
 }
 
 ul,
@@ -238,16 +81,25 @@ p {
     margin: 0;
 }
 
-
 .section-heading {
     margin-bottom: 60px;
 }
 
+/* Line Separators CSS */
+
+.line-shape-white {
+  height: 5px;
+  background-color: white;
+  opacity: 0.7;
+  margin-top: 15px;
+  width: 75%;
+}
+
 .line-shape {
-    height: 2px;
-    background-color: black;
-    opacity: 0.3;
-    margin-top: 15px;
+  height: 2px;
+  background-color: black;
+  opacity: 0.3;
+  margin-top: 15px;
 }
 
 .table {
@@ -314,74 +166,73 @@ p {
     }
 }
 
+
 /* --------------------------
-:: 2.0 Header Area CSS
+Header CSS Pages 1,2/3
 -------------------------- */
 
 .header_area {
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-    top: 0;
-    padding: 0 4%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  padding: 0 4%;
 }
 
 .menu_area .navbar-brand {
-    font-size: 40px;
-    font-weight: 600;
-    color: white;
-    margin:20px 10px;
-    line-height: 46px;
-    padding: 0;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  margin: 20px 10px;
+  line-height: 46px;
+  padding: 0;
 }
 
-
-.menu_area .navbar-brand:hover,
-.menu_area .navbar-brand:focus {
-    color: white;
+.menu_area .navbar-brand:hover, .menu_area .navbar-brand:focus {
+  color: black;
 }
 
 .menu_area {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .menu_area #nav .nav-link {
-    color: white;
-    display: block;
-    font-size: 20px;
-    font-weight: 500;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-    padding: 35px 15px;
+  color: white;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  padding: 35px 15px;
 }
 
 .menu_area #nav .nav-link:hover {
-    color: orange;
+  color: orange;
 }
 
-.download-button > a {
-    color: white;
-    font-weight: 500;
-    display: inline-block;
-    border: 2px solid #a883e9;
-    height: 50px;
-    min-width: 200px;
-    line-height: 46px;
-    text-align: center;
-    background-color: transparent;
-    border-radius: 5px;
+.download-button>a {
+  color: white;
+  font-weight: 500;
+  display: inline-block;
+  border: 2px solid #a883e9;
+  height: 50px;
+  min-width: 200px;
+  line-height: 46px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 5px;
 }
 
-.download-button > a:hover {
-    background: violet;
-    color: black;
-    border-color: transparent;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
+.download-button>a:hover {
+  background: violet;
+  color: black;
+  border-color: transparent;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 
 /* stcicky css for the Header */
@@ -389,7 +240,7 @@ p {
 .header_area.sticky {
   background-color: white;
   -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   height: 100px;
   position: fixed;
   top: 0;
@@ -402,22 +253,31 @@ p {
 
 .header_area.sticky .menu_area #nav .nav-link {
   padding: 23px 15px;
+  color: black;
 }
+
+.header_area.sticky .menu_area #nav .nav-link:hover {
+  color: orange;
+}
+
 .header_area.sticky .navbar {
   padding: 0;
 }
 
+ .header_area.sticky .download-button>a {
+   color: black;
+ }
 
 /* --------------------------
-Home Area CSS
+Home Welcome Section CSS
 -------------------------- */
 
-.welcome_area {
+.home-welcome_area {
     background: url('img/Coffee-shop-working-enviroment.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 1000px;
     position: relative;
     z-index: 1;
 }
@@ -434,34 +294,34 @@ Home Area CSS
   position: absolute;
 }
 
-.welcome-thumb {
-    position: absolute;
-    width: 400px;
-    height: 800px;
-    bottom: -100px;
-    right: 20%;
-    z-index: 9;
+.home-welcome-heading {
+    top: 50%
 }
 
-.wellcome-heading > h2 {
+.home-welcome-heading > h2 {
     font-size: 50px;
     color: #fff;
     font-weight: 400;
     position: relative;
 }
 
-.wellcome-heading > h4 {
+.home-welcome-heading > h4 {
     font-size: 35px;
-    color: #c6c6c6;
+    color: white;
     font-weight: 400;
     position: relative;
     margin: 20px 20px;
 }
 
-.select-btn {
+.home-page-welcome-img img {
+    width: 100%;
+    height: 600px;
+}
+
+.home-select-btn {
     background-color: transparent;
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     display: inline-block;
     border: 2px solid white;
     height: 50px;
@@ -469,82 +329,103 @@ Home Area CSS
     line-height: 46px;
     text-align: center;
     border-radius: 40px;
-    opacity: 0.7;
     margin: 5px 10px;
 }
 
-.select-btn a {
-  color: white;
+.home-select-btn a {
+    color: white;
 }
 
-.select-btn:hover a {
-  color: black;
+.home-select-btn:hover a {
+    color: black;
 }
 
-.select-btn:hover {
-    opacity: 1;
-    background: violet;
+.home-select-btn:hover {
+  background: violet;
+  border: 2px solid violet;
     -webkit-transition-duration: 250ms;
     -o-transition-duration: 250ms;
     transition-duration: 250ms;
 }
 
-.get-started {
-  display: block;
-  text-align: left;
+.learn_more_btn {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
 
-.wellcome-heading {
-    margin-bottom: 400px;
+.learn_more_btn > a {
+    color: green;
+}
+
+.home-get-started {
+    display: block;
+    text-align: left;
 }
 
 /* --------------------------
-:: 4.0 Special Area CSS
+Featuring the Panino App CSS
 -------------------------- */
+
+.features-area {
+  padding: 100px 100px;
+}
 
 .single-icon > i {
     font-size: 36px;
     color: #fb397d;
 }
 
-.single-special > h4 {
-    font-size: 22px;
-    color: #5b32b4;
-}
-
 .single-icon {
     margin-bottom: 25px;
 }
 
-.single-special > h4 {
+.feature > h4 {
     font-size: 22px;
     color: #5b32b4;
     margin-bottom: 15px;
 }
 
-.single-special {
+.feature {
     border: 1px solid #eff2f6;
     padding: 40px;
-    border-radius: 40px 40px 40px 0px;
     -webkit-transition-duration: 800ms;
     -o-transition-duration: 800ms;
     transition-duration: 800ms;
     margin-bottom: 30px;
 }
 
-.special_description_content > h2 {
-    color: #5b32b4;
-    font-size: 48px;
-    margin-bottom: 30px;
-}
-
-.single-special:hover {
+.feature:hover {
     -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
             box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
 }
 
-.single-special p {
+.feature p {
     margin-bottom: 0;
+}
+
+.feature img {
+    height: auto;
+    width: 40%;
+}
+
+/*---------- Download app Area CSS ----- */
+
+.special_description_img img {
+    height: auto;
+    width: 40%;
+}
+
+.download_description h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.download_description > h4 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .app-download-area {
@@ -560,7 +441,7 @@ Home Area CSS
 }
 
 .app-download-btn a {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -574,6 +455,7 @@ Home Area CSS
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    background-color: white;
 }
 
 .app-download-btn.active a,
@@ -644,87 +526,40 @@ Home Area CSS
     margin-top: 15px;
 }
 
-/* --------------------------
-:: 6.0 Video Area CSS
--------------------------- */
+/*---------- Cool and Download Link App Facts Area CSS ----- */
 
-.video-area {
+.oval-2 {
+  width: 100%;
+  height: 100px;
+  background: white;
+  border-radius: 95%;
+  top: -50px;
+  z-index: 1;
+  position: absolute;
+}
+
+.download_area  {
     position: relative;
-    z-index: 1;
-    background-position: center center;
-    background-size: cover;
-    border: 20px solid #fff;
-    border-radius: 20px;
-    height: 650px;
-    -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
-}
-
-.video-area:after {
-    position: absolute;
-    content: "";
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-    border: 1px solid #f1f4f8;
-    z-index: 2;
-    border-radius: 20px;
-}
-
-
-.video-area .video-play-btn a {
-    width: 80px;
-    height: 80px;
-    background-color: #fb397d;
-    color: #fff;
-    text-align: center;
-    display: block;
-    font-size: 36px;
-    line-height: 80px;
-    padding-left: 5px;
-    border-radius: 50%;
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: 3;
-}
-
-.video-area .video-play-btn a:hover {
-    background-color: #a865e1;
-    color: #fff;
-}
-
-/* --------------------------
-:: 7.0 Cool Facts Area CSS
--------------------------- */
-
-.cool_facts_area {
-    position: relative;
-    z-index: auto;
     background: #a865e1;
     background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
     background: -webkit-linear-gradient(right, #7873ed, #a865e1);
     background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
     background: -o-linear-gradient(right, #7873ed, #a865e1);
     background: linear-gradient(to left, #7873ed, #a865e1);
-    padding: 180px 0 80px 0;
-    top: -100px;
+    padding: 100px 0px 100px 0px;
 }
 
-
-.cool_facts_area:after {
+.download_area:after {
+    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    display: block;
     position: absolute;
-    bottom: -100px;
-    left: 0;
-    right: 0;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
-    height: 100px;
-    background-color: #fff;
-    content: ''
+    height: 32px;
 }
 
 .cool-facts-content > i {
@@ -799,7 +634,7 @@ Home Area CSS
 /* --------------------------
 :: 9.0 Pricing Plan Area CSS
 -------------------------- */
-
+/*
 .pricing-plane-area {
     background: #f5f9fc;
 }
@@ -871,10 +706,10 @@ Home Area CSS
 .single-price-plan.active .package-plan > h5,
 .single-price-plan.active .plan-button > a {
     color: #fff;
-}
+} */
 
 /* --------------------------
-:: 10.0 Testimonials Area CSS
+Cleints Feedback Area CSS
 -------------------------- */
 
 .clients-feedback-area .client-name > h5 {
@@ -1066,8 +901,256 @@ Home Area CSS
     margin-bottom: 50px;
 }
 
+        /* --------------------------
+         Footer Section CSS Page Across All pages
+        -------------------------- */
+
+.footer-text>h2 {
+  color: #5b32b4;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.footer-social-icon i {
+  background: #9b69e4;
+  color: #ffffff;
+}
+
+.footer-social-icon {
+  padding: 50px 50px;
+}
+
+.footer-social-icon > a > i:hover {
+  color: #fb397d;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.social-icon {
+  margin-bottom: 30px;
+}
+
+.footer-text {
+  margin-bottom: 15px;
+}
+
+.footer-menu ul li {
+  display: inline-block;
+}
+
+.footer-menu ul li a {
+  border-right: 2px solid #726a84;
+  display: block;
+  padding: 0 7.5px;
+  color: #726a84;
+}
+
+.footer-social-icon > a .active {
+  background: #fb397d;
+}
+
+.footer-menu ul li:last-child a {
+  border-right: 0 solid #ddd;
+}
+
+.footer-menu {
+  margin-bottom: 15px;
+}
+
+.copyright-text>p {
+  margin-bottom: 0;
+}
+
+
+/*--------- How does it work CSS --------- */
+
 /* --------------------------
-:: 13.0 Contact Area CSS Start
+Header Section Page 2 CSS
+-------------------------- */
+
+
+/* --------------------------
+how-it-works welcome Area CSS
+-------------------------- */
+
+.faq_welcome_area {
+  background: linear-gradient(to bottom right, #5E2A90, #7F40A5, #BB76C8);
+  height: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Change this later to::after 1 */
+
+.oval {
+  width: 100%;
+  height: 100px;
+  background: white;
+  border-radius: 95%;
+  bottom: -50px;
+  z-index: 1;
+  position: absolute;
+}
+
+.how-works-welcome-video {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  z-index: 9;
+}
+
+.faq-welcome-heading > h2 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+}
+
+.faq-welcome-heading > h4 {
+  font-size: 35px;
+  color: #c6c6c6;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.type-select-btn {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+  border: 2px solid white;
+  height: 50px;
+  width: 167px;
+  line-height: 46px;
+  text-align: center;
+  border-radius: 40px;
+  opacity: 0.7;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.type-select-btn a {
+  color: white;
+}
+
+.type-select-btn:hover {
+  opacity: 1;
+  background: #fff;
+  color: black;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+}
+
+.whoareyou-get-started {
+  display: block;
+  text-align: center;
+}
+
+.faq-welcome-heading {
+  margin-bottom: 400px;
+}
+
+/* --------------------------
+Video Area CSS Page 2/3
+-------------------------- */
+
+.video-area {
+  position: relative;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  border: 20px solid #fff;
+  border-radius: 20px;
+  height: 500px;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+}
+
+.video-area:after {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  border: 1px solid #f1f4f8;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.video-area .video-play-btn a {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: block;
+  font-size: 36px;
+  line-height: 80px;
+  padding-left: 5px;
+  border-radius: 50%;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.video-area .video-play-btn a:hover {
+  background-color: #a865e1;
+  color: #fff;
+}
+
+/* --------------------------
+FAQ Section Page 2 Area CSS
+-------------------------- */
+
+.faq-area {
+  padding: 100px 100px;
+}
+
+.faq-heading {
+  margin-top: 70px;
+}
+
+.faq-heading h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+.faq-area h2 {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.faq-row > h4 {
+  font-size: 25px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.faq-row {
+  margin-bottom: 30px;
+}
+
+.faq-row p {
+  margin-bottom: 0;
+  color: black;
+  font-size: 20px;
+}
+
+/* --------------------------
+Contact Secion CSS
 -------------------------- */
 
 .address-text > p,
@@ -1134,73 +1217,4 @@ Home Area CSS
 
 .footer-text > p {
     margin-bottom: 50px;
-}
-
-/* --------------------------
-:: 14.0 Footer Area CSS Start
--------------------------- */
-
-.footer-text > h2 {
-    color: #5b32b4;
-    font-size: 72px;
-    font-weight: 700;
-}
-
-.footer-social-icon > a > i {
-    background: #9b69e4;
-    font-size: 14px;
-    color: #ffffff;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    font-weight: 500;
-    border-radius: 10px 10px 10px 0px;
-    margin-right: 10px;
-}
-
-.footer-social-icon > a > i:hover {
-    background: #fb397d;
-    color: #fff;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-
-.social-icon {
-    margin-bottom: 30px;
-}
-
-.footer-text {
-    margin-bottom: 15px;
-}
-
-.footer-menu ul li {
-    display: inline-block;
-}
-
-.footer-menu ul li a {
-    border-right: 2px solid #726a84;
-    display: block;
-    padding: 0 7.5px;
-    color: #726a84;
-}
-
-.footer-social-icon > a .active {
-    background: #fb397d;
-}
-
-.footer-menu ul li:last-child a {
-    border-right: 0 solid #ddd;
-}
-
-.footer-social-icon {
-    margin-bottom: 30px;
-}
-
-.footer-menu {
-    margin-bottom: 15px;
-}
-
-.copyright-text > p {
-    margin-bottom: 0;
 }

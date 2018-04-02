@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Title -->
+  <title>Panino - How it Works?</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/Logo.png">
+
+  <!-- Core Stylesheet -->
+  <link href="how-it-works.css" rel="stylesheet">
+
+  <!-- Responsive CSS -->
+  <link href="css/responsive.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="how-it-works.js"></script>
+
+  <script defer src="fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+  <!-- Preloader Start -->
+  <div id="preloader">
+    <div class="colorlib-load"></div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header_area animated">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Menu Area Start -->
+        <div class="col-12 col-lg-10">
+          <div class="menu_area">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <!-- Logo -->
+              <a href="#getpanino.com">
+                  <div class="navbar-brand">
+                    <img src="img/Logo.png" alt="Panino"> Panino
+                  </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <!-- Menu Area -->
+              <div class="collapse navbar-collapse" id="ca-navbar">
+                <ul class="navbar-nav ml-auto" id="nav">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#how-it-works">How it Works</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#businesspage">Are you a Business?</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#faq">F.A.Q.</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Download App Button -->
+        <div class="col-12 col-lg-2">
+          <div class="download-button d-none d-lg-block">
+            <a href="#">Download for <b> Free </b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome_area clearfix" id="how-it-works">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 col-md">
+          <div class="wellcome-heading">
+            <h2>How does it work?</h2>
+            <div class="row">
+              <div class="col-lg-3 col-12"></div>
+              <div class="line-shape col-lg-6 col-12 text-center"></div>
+              <div class="col-lg-3 col-12"></div>
+            </div>
+            <h4>Please select from:</h4>
+            <!-- Question Area Button -->
+            <div class="get-started">
+              <div class="select-btn" onclick="Customer_Page()">
+                <a id="Customer-btn">I am a Customer</a>
+              </div>
+              <div class="select-btn" onclick="Business_Page()">
+                <a id="Business-btn">I am a Business</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Welcome thumb -->
+    <div class="welcome-thumb wow fadeInDown" data-wow-delay="1s">
+      <div class="video-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- Customer Video Area Start -->
+              <div id="customer-video" class="video-area" style="background-image: url(img/Coffee-shop-queue.png);">
+                <div class="video-play-btn">
+                  <a href="https://www.youtube.com/watch?v=f5BBJ4ySgpo" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <!-- Business Video Area Start -->
+              <div id="business-video" class="video-area" style="background-image: url(img/Coffee-shop-queue.png); display:none;">
+                <div class="video-play-btn">
+                  <a href="https://www.youtube.com/watch?v=f5BBJ4ySgpo" class="video_btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="oval"></div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
+
+  <!-- ***** Frequently Asked Questions Area Start ***** -->
+  <section class="special-area bg-white section_padding_100" id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Section Heading Area -->
+          <div class="section-heading text-center">
+            <h2>Frequently Asked Questions</h2>
+            <div class="row">
+              <div class="col-lg-3 col-12"></div>
+              <div class="line-shape col-lg-6 col-12 text-center"></div>
+              <div class="col-lg-3 col-12"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- List of Questions for Customers -->
+      <ul id="customer-faq" style="list-style-type:none;">
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How are my loyalty points collected?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How are my loyalty points collected?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How are my loyalty points collected?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How are my loyalty points collected?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How are my loyalty points collected?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+      </ul>
+      <!-- List of Questions for Customers -->
+      <ul id="business-faq" style="list-style-type:none; display:none">
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How does this loyalty scheme operate?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How does this loyalty scheme operate?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How does this loyalty scheme operate?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How are my loyalty points collected?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+        <li class="single-special text-left wow fadeInUp" data-wow-delay="0.3s"><h4><strong>How are my loyalty points collected?</strong></h4></li>
+        <li class="text-left wow fadeInUp" data-wow-delay="0.3s"><p>You can collect your points by linking your bank accounts in <br> Panino app and simply shoppingat your local retailers</p></li>
+        <br>
+      </ul>
+      <div class="row">
+        <div class="col-lg-3 col-12"></div>
+        <div class="line-shape col-lg-6 col-12 text-center"></div>
+        <div class="col-lg-3 col-12"></div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
+            <br>
+            <h3>Didn't Answer your Question? Email Us:</h3>
+            <h5 style="color: purple">help@getpanino.com</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Special Area End ***** -->
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-social-icon text-center clearfix">
+    <!-- footer logo -->
+    <div class="footer-text">
+      <img src="img/Logo.png">
+      <h2>Panino</h2>
+    </div>
+    <!-- social icon-->
+    <div class="footer-social-icon">
+      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+    <div class="footer-menu">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">How it Works?</a></li>
+          <li><a href="#">Are you a Business?</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Foooter Text-->
+    <div class="copyright-text">
+      <p>Copyright ©2018 Panino Apps</p>
+    </div>
+  </footer>
+  <!-- ***** Footer Area Start ***** -->
+
+  <!-- Jquery-2.2.4 JS -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap-4 Beta JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All Plugins JS -->
+  <script src="js/plugins.js"></script>
+  <!-- Slick Slider Js-->
+  <script src="js/slick.min.js"></script>
+  <!-- Footer Reveal JS -->
+  <script src="js/footer-reveal.min.js"></script>
+  <!-- Active JS -->
+  <script src="js/active.js"></script>
+</body>
+
+</html>

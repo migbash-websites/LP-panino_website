@@ -20,172 +20,92 @@
   <!-- Responsive CSS -->
   <link href="css/responsive.css" rel="stylesheet">
 
-  <!-- Icons file .svg -->
-  <script defer src="js/fontawesome-all.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- Preloader Start -->
   <div id="preloader">
     <div class="colorlib-load"></div>
   </div>
 
-  <!-- ***** Home Header Area Start ***** -->
+  <!-- ***** Home Header Area Start ****-->
   <header class="header_area animated">
     <div class="container-fluid">
       <div class="row align-items-center">
         <!-- Menu Area Start -->
-        <div class="col-12 col-lg-10">
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="menu_area">
             <nav class="navbar navbar-expand-lg navbar-light">
               <!-- Logo -->
               <a href="index.html">
                 <div class="navbar-brand">
-                  <img src="img/Logo.png" alt="Panino"> Panino
+                  <img src="img/Logo.png" alt="Panino" id="Panino_Logo"> Panino
                 </div>
               </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <!-- Menu Area -->
               <div class="collapse navbar-collapse" id="ca-navbar">
                 <ul class="navbar-nav ml-auto" id="nav">
                   <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">Are you a Business?</a></li>
                   <li class="nav-item"><a class="nav-link" href="how-it-works.html">How it Works</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#businesspage">Are you a Business?</a></li>
                   <li class="nav-item"><a class="nav-link" href="how-it-works.html">F.A.Q.</a></li>
                 </ul>
               </div>
+              <div class="download-button">
+                <a href="#download">Download for <b> Free </b></a>
+              </div>
+              <button class="navbar-toggler dropdown" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             </nav>
-          </div>
-        </div>
-        <!-- Download App Button -->
-        <div class="col-12 col-lg-2">
-          <div class="download-button d-none d-lg-block">
-            <a href="#">Download for <b> Free </b></a>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
+  <!-- ***** Header Area End ****-->
 
   <!-- ***** Welcome Area Start ***** -->
-  <section class="home-welcome_area clearfix" id="home">
+  <section class="clearfix" id="home">
+    <div class="background-image"></div>
     <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12 col-md">
-          <div class="row">
-            <div class="home-welcome-heading col-lg-8 text-left">
-              <h2>Panino</h2>
-              <div class="line-shape-white text-left"></div>
-              <h4 class="text-left"> Free loyalty scheme and analytics <br> for your business</h4>
-              <!-- Home Get Started Area Buttons -->
-              <div class="home-get-started">
-                <div class="home-select-btn">
-                  <a href="#LinktoCustomerPage">Learn More</a>
-                </div>
-                <div class="home-select-btn">
-                  <a href="#LinktoBusinessPage">Get Panino</a>
-                </div>
-              </div>
+      <!-- <div class="row h-100 align-items-center"> -->
+      <div class="row align-items-center main_welcome_items">
+        <div class="home-welcome-heading col-lg-8 col-md-8 col-sm-12 text-left">
+          <!-- <div class="line-shape-white text-left"></div> -->
+          <h4> Free loyalty scheme and analytics
+            <br> for <u> you </u> and <u>your business</u> </h4>
+          <!-- Home Get Started Area Buttons -->
+          <div class="home-get-started">
+            <div class="home-select-btn">
+              <a class="text-white" href="#LinktoCustomerPage">Learn More</a>
             </div>
-            <!-- Home Page Welcome Img App-->
-            <div class="home-page-welcome-img col-lg-4 wow fadeInDown" data-wow-delay="1s">
-              <img src="img/Iphone_Screen.png">
+            <div class="home-select-btn">
+              <a class="text-white" href="#LinktoBusinessPage">Get Panino</a>
             </div>
           </div>
         </div>
+        <!-- Home Page Welcome Img App-->
+        <div class="home-page-welcome-img col-lg-4 col-md-4 col-sm-12 wow fadeInDown" data-wow-delay="1s">
+          <img src="img/Iphone_Screen.png">
+        </div>
       </div>
+      <!-- </div> -->
     </div>
-    <div class="learn_more_btn">
-      <a id="arrow-one" href="#about"> <i class="fas fa-angle-down fa-5x" style="position:absolute; right:50%; z-index:99;"></i>
-        <i class="fas fa-angle-double-down fa-5x" style="display:none; position:absolute; right:50%; z-index:100;"></i>
-      </a>
+    <div class="learn-more-area">
+      <a href="#about">
+        <p> Learn More </p><i class="fas fa-angle-down fa-4x"></i></a>
     </div>
     <div class="oval"></div>
   </section>
   <!-- ***** Welcome Area End ***** -->
 
-  <!-- ***** Features Area Start ***** -->
-  <section class="features-area bg-white" id="about">
+  <section class="awesome-feature-area bg-white clearfix" id="features">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Section Heading Area -->
-          <div class="section-heading text-center">
-            <h2>What is Panino?</h2>
-            <div class="row">
-              <div class="col-lg-3 col-12"></div>
-              <div class="line-shape col-lg-6 col-12 text-center"></div>
-              <div class="col-lg-3 col-12"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 1st Feature Area -->
-      <div class="row feature wow fadeInUp" data-wow-delay="0.2s">
-        <div class="col-lg-8">
-          <div class="text-center wow fadeInUp" data-wow-delay="1s">
-            <h4>Very Fast</h4>
-            <p>With Panino we offer very easy user interface. It comes with a step-by-step walkthgough on how to get a shop customer started on using the <br> loyalty shceme. This is also true for the businesses who wish to start using the Panino Loyalty
-              Scheme today.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
-          <img src="img/Iphone_Screen.png"></i>
-        </div>
-      </div>
-      <!-- 1st Feature Area -->
-      <div class="row feature wow fadeInUp" data-wow-delay="0.2s">
-        <div class="col-lg-8">
-          <div class="text-center wow fadeInUp" data-wow-delay="1s">
-            <h4>Very Fast</h4>
-            <p>With Panino we offer very easy user interface. It comes with a step-by-step walkthgough on how to get a shop customer started on using the <br> loyalty shceme. This is also true for the businesses who wish to start using the Panino Loyalty
-              Scheme today.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
-          <img src="img/Iphone_Screen.png"></i>
-        </div>
-      </div>
-      <!-- 1st Feature Area -->
-      <div class="row feature wow fadeInUp" data-wow-delay="0.2s">
-        <div class="col-lg-8">
-          <div class="text-center wow fadeInUp" data-wow-delay="1s">
-            <h4>Very Fast</h4>
-            <p>With Panino we offer very easy user interface. It comes with a step-by-step walkthgough on how to get a shop customer started on using the <br> loyalty shceme. This is also true for the businesses who wish to start using the Panino Loyalty
-              Scheme today.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
-          <img src="img/Iphone_Screen.png"></i>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** Features Area End ***** -->
-
-  <!-- ***** other Features Start ***** -->
-  <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Heading Text -->
-          <div class="section-heading text-center">
-            <h2>Awesome Features</h2>
-            <div class="line-shape"></div>
-          </div>
-        </div>
-      </div>
-
       <div class="row">
         <!-- Single Feature Start -->
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-feature">
             <i class="ti-user" aria-hidden="true"></i>
-            <h5>Awesome Experience</h5>
+            <h5>Fast</h5>
             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
@@ -193,7 +113,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-feature">
             <i class="ti-pulse" aria-hidden="true"></i>
-            <h5>Fast and Simple</h5>
+            <h5>Simple</h5>
             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
@@ -201,7 +121,128 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-feature">
             <i class="ti-dashboard" aria-hidden="true"></i>
-            <h5>Clean Code</h5>
+            <h5>Secure</h5>
+            <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Features Area Start ***** -->
+  <section class="bg-white" id="about">
+
+        <!-- 1st Feature Area -->
+      <div class="row feature wow fadeInUp" data-wow-delay="0.2s">
+        <div class="col-lg-8">
+          <div class="text-center wow fadeInUp" data-wow-delay="1s">
+            <h4>Very Fast</h4>
+            <p>With Panino we offer very easy user interface. It comes with a step-by-step walkthgough on how to get a shop customer started on using the <br> loyalty shceme. This is also true for the businesses who wish to start using the Panino Loyalty
+              Scheme today.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
+          <img src="img/Iphone_Screen.png"></i>
+        </div>
+      </div>
+      <!-- 1st Feature Area -->
+      <div class="row feature wow fadeInUp" data-wow-delay="0.2s">
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
+          <img src="img/QR_code_for_mobile_English_Wikipedia.png"></i>
+        </div>
+        <div class="col-lg-8">
+          <div class="text-center wow fadeInUp" data-wow-delay="1s">
+            <h4>Fast Process</h4>
+            <p>With Panino we offer very easy user interface. It comes with a step-by-step walkthgough on how to get a shop customer started on using the <br> loyalty shceme. This is also true for the businesses who wish to start using the Panino Loyalty
+              Scheme today.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 1st Feature Area -->
+      <div class="row feature wow fadeInUp" data-wow-delay="0.2s">
+        <div class="col-lg-8">
+          <div class="text-center wow fadeInUp" data-wow-delay="1s">
+            <h4>Security</h4>
+            <p>With Panino we offer very easy user interface. It comes with a step-by-step walkthgough on how to get a shop customer started on using the <br> loyalty shceme. This is also true for the businesses who wish to start using the Panino Loyalty
+              Scheme today.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
+          <img src="img/Iphone_Screen.png"></i>
+        </div>
+      </div>
+  </section>
+  <!-- ***** Features Area End ***** -->
+
+  <!-- ***** App Quick Info Area Start ***** -->
+  <section class="quick-info-app clearfix bg-white">
+    <div class="quick-info-app-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 col-md-9 text-center quick-info-app-img">
+            <video autoplay loop>
+              <source src="img/App-img/Image uploaded from iOS (1).MP4" type="video/mp4">
+            </video>
+          </div>
+          <div class="col-lg-8 col-sm-12 col-md-3">
+            <ul>
+              <li class="text-left wow fadeInUp" data-wow-delay="0.3s">
+                <div class="single-quick-guide">
+                  <div>
+                    <h1>1</h1>
+                    <h2> - Create an Account </h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem </p>
+                  </div>
+                </div>
+              </li>
+              <li class="text-left wow fadeInUp" data-wow-delay="0.3s">
+                <div class="single-quick-guide">
+                  <div>
+                    <h1>2</h1>
+                    <h2> - Link your Bank Account</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem </p>
+                  </div>
+                </div>
+              </li>
+              <li class="text-left wow fadeInUp" data-wow-delay="0.3s">
+                <div class="single-quick-guide">
+                  <h1>3</h1>
+                  <h2> - Earn Loyalty Points!</h2>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium obcaecati vel exercitationem </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- ***** App Quick Info Area End ***** -->
+
+  <!-- ***** other Features Start ***** -->
+  <section class="awesome-feature-area bg-white clearfix" id="features">
+    <div class="container">
+      <div class="row">
+        <!-- Single Feature Start -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-feature">
+            <i class="ti-user" aria-hidden="true"></i>
+            <h5>Up-to-date</h5>
+            <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <!-- Single Feature Start -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-feature">
+            <i class="ti-pulse" aria-hidden="true"></i>
+            <h5>Simple Interface</h5>
+            <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <!-- Single Feature Start -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-feature">
+            <i class="ti-dashboard" aria-hidden="true"></i>
+            <h5>Fast</h5>
             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
@@ -209,7 +250,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-feature">
             <i class="ti-palette" aria-hidden="true"></i>
-            <h5>Perfect Design</h5>
+            <h5>24/7 Online Support</h5>
             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
@@ -225,7 +266,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="single-feature">
             <i class="ti-headphone" aria-hidden="true"></i>
-            <h5>24/7 Online Support</h5>
+            <h5>Free of charge</h5>
             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
@@ -234,38 +275,67 @@
   </section>
   <!-- ***** Other Features End ***** -->
 
+  <!-- ***** Client Feedback Area Start ***** -->
+  <section class="bg-white clearfix" id="feedback_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <!-- Heading Text  -->
+          <h1> Clients Feedback </h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <!-- App Screenshots Slides  -->
+          <div class="clients-testimonials owl-carousel text-center">
+            <div class="client-box">
+              <p> Catalina </p>
+              <p> "I love using this app. Its simple, easy and very rewarding" </p>
+            </div>
+            <div class="client-box">
+              <p> Edward </p>
+              <p> "This app saves me a lot of time. Open app, and get rewarded. Very handy, and practical." </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Client Feedback Area End ***** -->
+
   <!-- ***** App Facts/DownloadsArea Start ***** -->
-  <section class="download_area clearfix">
+  <section class="download_area clearfix" id="download">
     <!-- App Download Description Area -->
-    <div class="oval-2"></div>
     <div class="download_app_area">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-sm-12 col-md-9 text-center">
+          <!-- <div class="col-lg-6 col-sm-12 col-md-9 text-center">
             <div class="special_description_img">
               <img src="img/Iphone_Screen.png" alt="">
             </div>
-          </div>
-          <div class="col-lg-6 col-sm-12 col-md-3">
+          </div> -->
+          <div class="col-lg-12 col-sm-12 col-md-3 text-center">
             <div class="download_description">
               <h2>Start Using Panino Today!</h2>
-              <div class="line-shape-white text-left"></div>
+              <div class="line-shape-white"></div>
               <h4>Download Panino today for <b>free</b> and start saving money in an instant.</h4>
-              <div class="app-download-area">
-                <div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
-                  <!-- Google Play Store Download Btn -->
-                  <a href="#Link to google play store here">
-                      <i class="fab fa-android"></i>
-                      <p><span>available on</span> Google Store</p>
-                  </a>
-                </div>
-                <div class="app-download-btn wow fadeInDown" data-wow-delay="0.4s">
-                  <!-- Apple Store Download Btn -->
-                  <a href="#Link to apple store Here">
-                    <i class="fab fa-apple"></i>
-                    <p><span>available on</span> Apple Store</p>
-                  </a>
-                </div>
+              <div class="app-download-area text-center">
+                <!-- Google Play Store Download Btn -->
+                <a href="https://play.google.com/store?hl=es_419">
+                  <div class="app-download-btn wow fadeInDown" data-wow-delay="0.2s">
+                    <img src="img/Google_Play_BTN.png" style="width:30px;height:30px;">
+                    <p>Google Store</p>
+                  </div>
+                </a>
+                <!-- Apple Store Download Btn -->
+                <a href="https://www.apple.com/es/ios/app-store/">
+                  <div class="app-download-btn wow fadeInDown" data-wow-delay="0.2s">
+                    <i class="fab fa-apple fa-2x" style="color:black;"></i>
+                    <p>Apple Store</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -273,71 +343,62 @@
       </div>
     </div>
     <!-- App Cool stats info-->
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
-        <!-- Single Cool Fact-->
+
         <div class="col-12 col-md-3 col-lg-3">
           <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.2s">
             <div class="counter-area">
               <h3><span class="counter">90</span></h3>
             </div>
             <div class="cool-facts-content">
-              <i class="ion-arrow-down-a"></i>
               <p>APP <br> DOWNLOADS</p>
             </div>
           </div>
         </div>
-        <!-- Single Cool Fact-->
+
         <div class="col-12 col-md-3 col-lg-3">
           <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.4s">
             <div class="counter-area">
-              <h3><span class="counter">120</span></h3>
+              <h3><span class="counter">80</span></h3>
             </div>
             <div class="cool-facts-content">
-              <i class="ion-happy-outline"></i>
               <p>ACTIVE <br> ACCOUNTS</p>
             </div>
           </div>
         </div>
-        <!-- Single Cool Fact-->
+
         <div class="col-12 col-md-3 col-lg-3">
           <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.6s">
             <div class="counter-area">
               <h3><span class="counter">40</span></h3>
             </div>
             <div class="cool-facts-content">
-              <i class="ion-person"></i>
               <p>ACTIVE <br>BUSINESSES</p>
             </div>
           </div>
         </div>
-        <!-- Single Cool Fact-->
         <div class="col-12 col-md-3 col-lg-3">
           <div class="single-cool-fact d-flex justify-content-center wow fadeInUp" data-wow-delay="0.8s">
             <div class="counter-area">
               <h3><span class="counter">10</span></h3>
             </div>
             <div class="cool-facts-content">
-              <i class="ion-ios-star-outline"></i>
               <p>TOTAL <br>APP RATES</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </section>
   <!-- ***** App Facts Area End ***** -->
 
   <!-- ***** App Screenshots Area Start ***** -->
-  <section class="app-screenshots-area bg-white section_padding_0_100 clearfix" id="screenshots">
+  <section class="app-screenshots-area bg-white clearfix" id="screenshots">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
           <!-- Heading Text  -->
-          <div class="section-heading">
-            <h2>App Screenshots</h2>
-            <div class="line-shape"></div>
-          </div>
         </div>
       </div>
     </div>
@@ -347,258 +408,134 @@
           <!-- App Screenshots Slides  -->
           <div class="app_screenshots_slides owl-carousel">
             <div class="single-shot">
-              <img src="img/scr-img/app-1.jpg" alt="">
+              <img src="img/App-img/Android Home Alt.png" alt="">
             </div>
             <div class="single-shot">
-              <img src="img/scr-img/app-2.jpg" alt="">
+              <img src="img/App-img/Image uploaded from iOS.png" alt="">
             </div>
             <div class="single-shot">
-              <img src="img/scr-img/app-3.jpg" alt="">
-            </div>
-            <div class="single-shot">
-              <img src="img/scr-img/app-4.jpg" alt="">
-            </div>
-            <div class="single-shot">
-              <img src="img/scr-img/app-5.jpg" alt="">
-            </div>
-            <div class="single-shot">
-              <img src="img/scr-img/app-3.jpg" alt="">
+              <img src="img/App-img/Simulator Screen Shot - iPhone X - 2018-03-30 at 01.06.41.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- ***** App Screenshots Area End *****====== -->
+  </section> -->
+  <!-- ***** App Screenshots Area End **** -->
 
-  <!-- ***** Pricing Plane Area Start *****==== -->
-  <!-- <section class="pricing-plane-area section_padding_100_70 clearfix" id="pricing">
-      <div class="container">
-          <div class="row">
-              <div class="col-12"> -->
-  <!-- Heading Text  -->
-  <!-- <div class="section-heading text-center">
-                      <h2>Pricing Plan</h2>
-                      <div class="line-shape"></div>
-                  </div>
-              </div>
+  <!-- ***** Pricing Plane Area Start **** -->
+  <!-- <section class="pricing-plane-area clearfix" id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"> -->
+          <!-- Heading Text  -->
+          <!-- <div class="section-heading text-center">
+            <h2>Pricing</h2>
           </div>
-
-          <div class="row no-gutters">
-              <div class="col-12 col-md-6 col-lg-3"> -->
-  <!-- Package Price  -->
-  <!-- <div class="single-price-plan text-center"> -->
-  <!-- Package Text  -->
-  <!-- <div class="package-plan">
-                          <h5>Starter Plan</h5>
-                          <div class="ca-price d-flex justify-content-center">
-                              <span>$</span>
-                              <h4>29</h4>
-                          </div>
-                      </div>
-                      <div class="package-description">
-                          <p>Up to 10 users monthly</p>
-                          <p>Unlimited updates</p>
-                          <p>Free host &amp; domain</p>
-                          <p>24/7 Support</p>
-                          <p>10 Unique Users</p>
-                      </div> -->
-  <!-- Plan Button  -->
-  <!-- <div class="plan-button">
-                          <a href="#">Select Plan</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3"> -->
-  <!-- Package Price  -->
-  <!-- <div class="single-price-plan text-center"> -->
-  <!-- Package Text  -->
-  <!-- <div class="package-plan">
-                          <h5>Basic Plan</h5>
-                          <div class="ca-price d-flex justify-content-center">
-                              <span>$</span>
-                              <h4>49</h4>
-                          </div>
-                      </div>
-                      <div class="package-description">
-                          <p>Up to 10 users monthly</p>
-                          <p>Unlimited updates</p>
-                          <p>Free host &amp; domain</p>
-                          <p>24/7 Support</p>
-                          <p>10 Unique Users</p>
-                      </div> -->
-  <!-- Plan Button  -->
-  <!-- <div class="plan-button">
-                          <a href="#">Select Plan</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3"> -->
-  <!-- Package Price  -->
-  <!-- <div class="single-price-plan active text-center"> -->
-  <!-- Package Text  -->
-  <!-- <div class="package-plan">
-                          <h5>Advenced Plan</h5>
-                          <div class="ca-price d-flex justify-content-center">
-                              <span>$</span>
-                              <h4>69</h4>
-                          </div>
-                      </div>
-                      <div class="package-description">
-                          <p>Up to 10 users monthly</p>
-                          <p>Unlimited updates</p>
-                          <p>Free host &amp; domain</p>
-                          <p>24/7 Support</p>
-                          <p>10 Unique Users</p>
-                      </div> -->
-  <!-- Plan Button  -->
-  <!-- <div class="plan-button">
-                          <a href="#">Select Plan</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3"> -->
-  <!-- Package Price  -->
-  <!-- <div class="single-price-plan text-center"> -->
-  <!-- Package Text  -->
-  <!-- <div class="package-plan">
-                          <h5>Community Plan</h5>
-                          <div class="ca-price d-flex justify-content-center">
-                              <span>$</span>
-                              <h4>99</h4>
-                          </div>
-                      </div>
-                      <div class="package-description">
-                          <p>Up to 10 users monthly</p>
-                          <p>Unlimited updates</p>
-                          <p>Free host &amp; domain</p>
-                          <p>24/7 Support</p>
-                          <p>10 Unique Users</p>
-                      </div> -->
-  <!-- Plan Button  -->
-  <!-- <div class="plan-button">
-                          <a href="#">Select Plan</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
+
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6 col-lg-3"> -->
+          <!-- Package Price  -->
+          <!-- <div class="single-price-plan text-center"> -->
+            <!-- Package Text  -->
+            <!-- <div class="package-plan"> -->
+              <!-- <h5>Starter Plan</h5>
+              <div class="ca-price d-flex justify-content-center">
+                <span>$</span>
+                <h4>29</h4>
+              </div>
+            </div>
+            <div class="package-description">
+              <p>Up to 10 users monthly</p>
+              <p>Unlimited updates</p>
+              <p>Free host &amp; domain</p>
+              <p>24/7 Support</p>
+              <p>10 Unique Users</p>
+            </div> -->
+            <!-- Plan Button  -->
+            <!-- <div class="plan-button">
+              <a href="#">Select Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3"> -->
+          <!-- Package Price  -->
+          <!-- <div class="single-price-plan text-center"> -->
+            <!-- Package Text  -->
+            <!-- <div class="package-plan">
+              <h5>Basic Plan</h5>
+              <div class="ca-price d-flex justify-content-center">
+                <span>$</span>
+                <h4>49</h4>
+              </div>
+            </div>
+            <div class="package-description">
+              <p>Up to 10 users monthly</p>
+              <p>Unlimited updates</p>
+              <p>Free host &amp; domain</p>
+              <p>24/7 Support</p>
+              <p>10 Unique Users</p>
+            </div> -->
+            <!-- Plan Button  -->
+            <!-- <div class="plan-button">
+              <a href="#">Select Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3"> -->
+          <!-- Package Price  -->
+          <!-- <div class="single-price-plan active text-center"> -->
+            <!-- Package Text  -->
+            <!-- <div class="package-plan">
+              <h5>Advenced Plan</h5>
+              <div class="ca-price d-flex justify-content-center">
+                <span>$</span>
+                <h4>69</h4>
+              </div>
+            </div>
+            <div class="package-description">
+              <p>Up to 10 users monthly</p>
+              <p>Unlimited updates</p>
+              <p>Free host &amp; domain</p>
+              <p>24/7 Support</p>
+              <p>10 Unique Users</p>
+            </div> -->
+            <!-- Plan Button  -->
+            <!-- <div class="plan-button">
+              <a href="#">Select Plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3"> -->
+          <!-- Package Price  -->
+          <!-- <div class="single-price-plan text-center"> -->
+            <!-- Package Text  -->
+            <!-- <div class="package-plan">
+              <h5>Community Plan</h5>
+              <div class="ca-price d-flex justify-content-center">
+                <span>$</span>
+                <h4>99</h4>
+              </div>
+            </div>
+            <div class="package-description">
+              <p>Up to 10 users monthly</p>
+              <p>Unlimited updates</p>
+              <p>Free host &amp; domain</p>
+              <p>24/7 Support</p>
+              <p>10 Unique Users</p>
+            </div> -->
+            <!-- Plan Button  -->
+            <!-- <div class="plan-button">
+              <a href="#">Select Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section> -->
   <!-- ***** Pricing Plane Area End ***** -->
-
-  <!-- ***** Client Feedback Area Start ***** -->
-  <section class="clients-feedback-area bg-white clearfix" id="feedback_area">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-sm-12">
-          <div class="slider slider-for">
-            <!-- Client Feedback Text  -->
-            <div class="client-feedback-text text-center">
-              <div class="client">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <div class="client-description text-center">
-                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting.
-                  ”
-                </p>
-              </div>
-              <div class="star-icon text-center">
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-              </div>
-              <div class="client-name text-center">
-                <h5>Aigars Silkalns</h5>
-                <p>Ceo Colorlib</p>
-              </div>
-            </div>
-            <!-- Client Feedback Text  -->
-            <div class="client-feedback-text text-center">
-              <div class="client">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <div class="client-description text-center">
-                <p>“ I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting. ”</p>
-              </div>
-              <div class="star-icon text-center">
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-              </div>
-              <div class="client-name text-center">
-                <h5>Jennifer</h5>
-                <p>Developer</p>
-              </div>
-            </div>
-            <!-- Client Feedback Text  -->
-            <div class="client-feedback-text text-center">
-              <div class="client">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <div class="client-description text-center">
-                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job.”</p>
-              </div>
-              <div class="star-icon text-center">
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-              </div>
-              <div class="client-name text-center">
-                <h5>Helen</h5>
-                <p>Marketer</p>
-              </div>
-            </div>
-            <!-- Client Feedback Text  -->
-            <div class="client-feedback-text text-center">
-              <div class="client">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <div class="client-description text-center">
-                <p>“ I have been using it for a number of years. I use Colorlib for usability testing. It's great for taking images and making clickable image prototypes that do the job and save me the coding time and just the general hassle of hosting.
-                  ”
-                </p>
-              </div>
-              <div class="star-icon text-center">
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-                <i class="ion-ios-star"></i>
-              </div>
-              <div class="client-name text-center">
-                <h5>Henry smith</h5>
-                <p>Developer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Client Thumbnail Area -->
-        <div class="col-12 col-md-6 col-lg-5">
-          <div class="slider slider-nav">
-            <div class="client-thumbnail">
-              <img src="img/bg-img/client-3.jpg" alt="">
-            </div>
-            <div class="client-thumbnail">
-              <img src="img/bg-img/client-2.jpg" alt="">
-            </div>
-            <div class="client-thumbnail">
-              <img src="img/bg-img/client-1.jpg" alt="">
-            </div>
-            <div class="client-thumbnail">
-              <img src="img/bg-img/client-2.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** Client Feedback Area End ***** -->
 
   <!-- ***** Our Team Area Start ***** -->
   <!-- <section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
@@ -726,6 +663,8 @@
   </footer>
   <!-- ***** Footer Area Start ***** -->
 
+  <!-- Icons file .svg -->
+  <script defer src="js/fontawesome-all.js"></script>
   <!-- Jquery-2.2.4 JS -->
   <script src="js/jquery-2.2.4.min.js"></script>
   <!-- Popper js -->

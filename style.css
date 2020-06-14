@@ -5,17 +5,17 @@
 @import 'css/owl.carousel.min.css';
 @import 'css/slick.css';
 /* Icons */
+
 @import 'css/fontawesome-all.css';
 @import 'css/themify-icons.css';
 @import 'css/ionicons.min.css';
-
 /* --------------------------
 Base CSS for Pages 1,2
 -------------------------- */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -31,58 +31,54 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-ul,
-ol {
-    margin: 0;
-    padding: 0;
+ul, ol {
+  margin: 0;
+  padding: 0;
 }
 
 #scrollUp {
-    bottom: 0;
-    font-size: 24px;
-    right: 30px;
-    width: 50px;
-    background-color: #fb397d;
-    color: #fff;
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
+  bottom: 0;
+  font-size: 24px;
+  right: 30px;
+  width: 50px;
+  background-color: #fb397d;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
-    text-decoration: none;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 p {
-    color: #726a84;
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 0;
+  color: #726a84;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
 }
 
-.heading-text > p {
-    font-size: 16px;
+.heading-text>p {
+  font-size: 16px;
 }
 
-.section-heading > h2 {
-    font-weight: 300;
-    color: #5b32b4;
-    font-size: 48px;
-    margin: 0;
+.section-heading>h2 {
+  font-weight: 300;
+  color: #5b32b4;
+  font-size: 48px;
+  margin: 0;
 }
 
 .section-heading {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 /* Line Separators CSS */
@@ -92,110 +88,98 @@ p {
   background-color: white;
   opacity: 0.7;
   margin-top: 15px;
-  width: 75%;
+  width: 100%;
 }
 
 .line-shape {
   height: 2px;
   background-color: black;
   opacity: 0.3;
-  margin-top: 15px;
+
 }
 
 .table {
-    display: table;
-    height: 100%;
-    left: 0;
-    position: relative;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+  display: table;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .table-cell {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #preloader {
-    overflow: hidden;
-    background-color: #fff;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999999;
+  overflow: hidden;
+  background-color: #fff;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
 }
 
 .colorlib-load {
-    -webkit-animation: 2000ms linear 0s normal none infinite running colorlib-load;
-    animation: 2000ms linear 0s normal none infinite running colorlib-load;
-    background: transparent none repeat scroll 0 0;
-    border-color: #dddddd #dddddd #fb397d;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    height: 40px;
-    left: calc(50% - 20px);
-    position: relative;
-    top: calc(50% - 20px);
-    width: 40px;
-    z-index: 9;
+  -webkit-animation: 2000ms linear 0s normal none infinite running colorlib-load;
+  animation: 2000ms linear 0s normal none infinite running colorlib-load;
+  background: transparent none repeat scroll 0 0;
+  border-color: #dddddd #dddddd #fb397d;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  height: 40px;
+  left: calc(50% - 20px);
+  position: relative;
+  top: calc(50% - 20px);
+  width: 40px;
+  z-index: 9;
 }
 
 @-webkit-keyframes colorlib-load {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes colorlib-load {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
-
 
 /* --------------------------
 Header CSS Pages 1,2/3
 -------------------------- */
 
 .header_area {
-  left: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  z-index: 99;
+  z-index: 100;
   top: 0;
   padding: 0 4%;
+  height: auto;
 }
 
 .menu_area .navbar-brand {
   font-size: 40px;
-  font-weight: 600;
-  color: black;
-  margin: 20px 10px;
+  font-weight: 500;
+  color: white;
   line-height: 46px;
-  padding: 0;
-}
-
-.menu_area .navbar-brand:hover, .menu_area .navbar-brand:focus {
-  color: black;
-}
-
-.menu_area {
-  position: relative;
-  z-index: 2;
 }
 
 .menu_area #nav .nav-link {
@@ -217,7 +201,7 @@ Header CSS Pages 1,2/3
   color: white;
   font-weight: 500;
   display: inline-block;
-  border: 2px solid #a883e9;
+  border: 2px solid violet;
   height: 50px;
   min-width: 200px;
   line-height: 46px;
@@ -235,189 +219,171 @@ Header CSS Pages 1,2/3
   transition-duration: 500ms;
 }
 
-/* stcicky css for the Header */
+/* stcicky css for the Header On scroll */
 
 .header_area.sticky {
   background-color: white;
   -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  height: 100px;
-  position: fixed;
-  top: 0;
   z-index: 99;
 }
-
-.header_area.sticky .menu_area .navbar-brand {
-  font-size: 50px;
-}
-
 .header_area.sticky .menu_area #nav .nav-link {
-  padding: 23px 15px;
   color: black;
 }
-
+.header_area.sticky .navbar-brand {
+  color: black;
+}
 .header_area.sticky .menu_area #nav .nav-link:hover {
   color: orange;
 }
-
-.header_area.sticky .navbar {
-  padding: 0;
+.header_area.sticky .download-button>a {
+  color: black;
 }
 
- .header_area.sticky .download-button>a {
-   color: black;
- }
+          /* --------------------------
+          Home Welcome Section CSS
+          -------------------------- */
 
-/* --------------------------
-Home Welcome Section CSS
--------------------------- */
-
-.home-welcome_area {
-    background: url('img/Coffee-shop-working-enviroment.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-    position: relative;
-    z-index: 1;
+#home {
+  position: relative;
+  z-index: 2;
 }
 
-/* Change this later to::after 1 */
+.background-image {
+  background: url('img/BG-Img/Coffee-shop-HQ.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.main_welcome_items {
+  padding-top: 200px;
+}
 
 .oval {
-  width: 100%;
-  height: 100px;
   background: white;
-  border-radius: 95%;
-  bottom: -50px;
-  z-index: 1;
+  width: 100%;
+  height: 70px;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   position: absolute;
+  bottom: -5px;
+  text-align: center;
+}
+
+.learn-more-area {
+  width: 100%;
+  position: absolute;
+  bottom: 60px;
+  text-align: center;
+  z-index: 20;
+}
+
+.learn-more-area>a:hover {
+  color: white;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+}
+
+.learn-more-area p {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  color: white;
 }
 
 .home-welcome-heading {
-    top: 50%
+  bottom: 0px;
 }
 
-.home-welcome-heading > h2 {
-    font-size: 50px;
-    color: #fff;
-    font-weight: 400;
-    position: relative;
+.home-welcome-heading>h2 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 400;
 }
 
-.home-welcome-heading > h4 {
-    font-size: 35px;
-    color: white;
-    font-weight: 400;
-    position: relative;
-    margin: 20px 20px;
+.home-welcome-heading>h4 {
+  font-size: 35px;
+  color: white;
+  font-weight: 400;
+  margin: 20px 20px;
 }
 
 .home-page-welcome-img img {
-    width: 100%;
-    height: 600px;
+  width: 350;
+  height: 600px;
 }
 
 .home-select-btn {
-    background-color: transparent;
-    color: #fff;
-    font-weight: 600;
-    display: inline-block;
-    border: 2px solid white;
-    height: 50px;
-    width: 167px;
-    line-height: 46px;
-    text-align: center;
-    border-radius: 40px;
-    margin: 5px 10px;
-}
-
-.home-select-btn a {
-    color: white;
-}
-
-.home-select-btn:hover a {
-    color: black;
+  background-color: transparent;
+  font-weight: 600;
+  display: inline-block;
+  border: 2px solid white;
+  height: 50px;
+  width: 167px;
+  line-height: 46px;
+  text-align: center;
+  border-radius: 40px;
+  margin: 5px 10px;
 }
 
 .home-select-btn:hover {
-  background: violet;
-  border: 2px solid violet;
-    -webkit-transition-duration: 250ms;
-    -o-transition-duration: 250ms;
-    transition-duration: 250ms;
-}
-
-.learn_more_btn {
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-}
-
-.learn_more_btn > a {
-    color: green;
-}
-
-.home-get-started {
-    display: block;
-    text-align: left;
+  background: orange;
+  border: 2px solid orange;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
 }
 
 /* --------------------------
 Featuring the Panino App CSS
 -------------------------- */
 
-.features-area {
-  padding: 100px 100px;
-}
-
-.single-icon > i {
-    font-size: 36px;
-    color: #fb397d;
-}
-
-.single-icon {
-    margin-bottom: 25px;
-}
-
-.feature > h4 {
-    font-size: 22px;
-    color: #5b32b4;
-    margin-bottom: 15px;
+.feature h4 {
+  font-size: 22px;
+  color: #5b32b4;
+  margin-bottom: 15px;
 }
 
 .feature {
-    border: 1px solid #eff2f6;
-    padding: 40px;
-    -webkit-transition-duration: 800ms;
-    -o-transition-duration: 800ms;
-    transition-duration: 800ms;
-    margin-bottom: 30px;
-}
-
-.feature:hover {
-    -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-            box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  -webkit-transition-duration: 800ms;
+  -o-transition-duration: 800ms;
+  transition-duration: 800ms;
 }
 
 .feature p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .feature img {
-    height: auto;
-    width: 40%;
+  height: auto;
+  width: 40%;
 }
 
 /*---------- Download app Area CSS ----- */
 
+
 .special_description_img img {
-    height: auto;
-    width: 40%;
+  height: auto;
+  width: 40%;
 }
 
-.download_description h2 {
+.download_description > h2 {
   color: white;
   font-size: 40px;
 }
@@ -429,212 +395,311 @@ Featuring the Panino App CSS
 }
 
 .app-download-area {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 1;
-    flex-basis: 1;
-    margin-top: 50px;
+  margin-top: 50px;
+  width: 100%;
+  display: inline-block;
 }
 
-.app-download-btn a {
-    border: 2px solid #ddd;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 15px 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: white;
+.app-download-btn {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  border: 2px solid white;
+  height: 70px;
+  width: 167px;
+  line-height: 46px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin: 5px 10px;
+  cursor: pointer;
+
+  /* -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; */
+  padding: 10px 25px;
+
+  /* -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; */
+  background-color: white;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  display: inline-block;
+
 }
 
-.app-download-btn.active a,
-.app-download-btn a:hover {
-    border-color: transparent;
-    background-color: #fb397d;
-}
-
-.app-download-btn a i {
-    color: #47425d;
-    font-size: 24px;
-    margin-right: 15px;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-
-.app-download-btn a p {
-    font-size: 16px;
-    line-height: 1;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-
-.app-download-btn a p span {
-    font-size: 12px;
-    display: block;
+.app-download-btn.active, .app-download-btn:hover {
+  border-color: transparent;
+  background-color: #fb397d;
 }
 
 .app-download-btn:first-child {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
-.app-download-btn a:hover i,
-.app-download-btn.active a i,
-.app-download-btn.active a p,
-.app-download-btn a:hover p {
-    color: #fff;
+          /* --------------------------
+              App Quick Info Area CSS
+          -------------------------- */
+
+ .quick-info-app {
+   padding: 50px 50px;
+ }
+
+.quick-info-app-img {
+  width: 300px;
+  height: auto;
+  background-image: url('img/Iphone_Screen.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.quick-info-app-img video{
+  width: 78%;
+  height: 65%;
+  position: absolute;
+  top: 69px;
+  right: 13.5%;
+
+}
+
+.single-quick-guide {
+  text-align: center;
+  display: inline-block;
+  padding: 25px 50px;
+  margin: 0;
+}
+
+.single-quick-guide h1 {
+ width: 70px;
+ height: 70px;
+ -moz-border-radius: 70px;
+ -webkit-border-radius: 70px;
+ border-radius: 70px;
+ line-height: 70px;
+ -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+display: inline-block;
+color: #5b32b4;
+}
+
+.single-quick-guide h2 {
+  display: inline-block;
+}
+
+.single-quick-guide:hover h1 {
+  background: #5b32b4;
+  color: white;
+  transition: 500ms;
 }
 
 /* --------------------------
 :: 5.0 Features Area CSS
 -------------------------- */
 
+#features {
+  padding: 50px 0;
+  position: relative;
+}
+
 .single-feature {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.single-feature > p {
-    margin-bottom: 0;
+.single-feature>p {
+  margin-bottom: 0;
 }
 
-.single-feature > i {
-    color: #fb397d;
-    font-size: 30px;
-    display: inline-block;
-    float: left;
-    margin-right: 10px;
+.single-feature>i {
+  color: #fb397d;
+  font-size: 30px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
 }
 
-.single-feature > h5 {
-    font-size: 22px;
-    color: #5b32b4;
+.single-feature>h5 {
+  font-size: 22px;
+  color: #5b32b4;
 }
 
-.single-feature > p {
-    margin-top: 15px;
+.single-feature>p {
+  margin-top: 15px;
 }
 
 /*---------- Cool and Download Link App Facts Area CSS ----- */
 
-.oval-2 {
-  width: 100%;
-  height: 100px;
-  background: white;
-  border-radius: 95%;
-  top: -50px;
-  z-index: 1;
-  position: absolute;
-}
-
-.download_area  {
-    position: relative;
-    background: #a865e1;
-    background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
-    background: -webkit-linear-gradient(right, #7873ed, #a865e1);
-    background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
-    background: -o-linear-gradient(right, #7873ed, #a865e1);
-    background: linear-gradient(to left, #7873ed, #a865e1);
-    padding: 100px 0px 100px 0px;
+.download_area {
+  position: relative;
+  background: #a865e1;
+  background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
+  background: -webkit-linear-gradient(right, #7873ed, #a865e1);
+  background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
+  background: -o-linear-gradient(right, #7873ed, #a865e1);
+  background: linear-gradient(to left, #7873ed, #a865e1);
+  padding: 100px 0px 100px 0px;
 }
 
 .download_area:after {
-    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
-    background-position: left-bottom;
-    background-repeat: repeat-x;
-    background-size: 32px 32px;
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 32px;
+  background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 32px;
 }
 
-.cool-facts-content > i {
-    color: #ffffff;
-    font-size: 36px;
+.cool-facts-content>i {
+  color: #ffffff;
+  font-size: 36px;
 }
 
 .counter-area {
-    min-width: 100px;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
+  min-width: 100px;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 .counter-area > h3 {
-    color: #ffffff;
-    font-size: 60px;
-    margin-bottom: 0;
-    line-height: 1;
+  color: #ffffff;
+  font-size: 60px;
+  margin-bottom: 0;
+  line-height: 1;
 }
 
 .cool-facts-content > p {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 0;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 0;
 }
 
-/* --------------------------
-:: 8.0 Screenshots Area CSS
--------------------------- */
+          /* --------------------------
+          :: 8.0 Screenshots Area CSS
+          -------------------------- */
 
 .app_screenshots_slides {
-    padding: 0 6%;
+  padding: 0 6%;
+}
+
+.client-box {
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  border: 0.6px solid black;
+  padding: 10px 10px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.clients-testimonials {
+  padding: 25px 25px;
+}
+
+.clients-testimonials .client-box {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85)
+}
+
+.clients-testimonials .center .client-box {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1)
+}
+
+.clients-testimonials .owl-dot {
+  height: 11px;
+  width: 11px;
+  border: 2px solid #a49fba;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 6px;
+  margin-top: 50px;
+}
+
+.clients-testimonials .owl-dot.active {
+  background-color: #fb397d;
+  border: transparent;
+}
+
+.clients-testimonials .owl-dots {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#feedback_area {
+  height: 300px;
+  -webkit-box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+}
+
+    /* --------------------------
+    Customers Testimonials Area CSS
+    -------------------------- */
+
+.app_screenshots_slides {
+  padding: 0 6%;
 }
 
 .app_screenshots_slides .single-shot {
-    opacity: 0.7;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    -webkit-transform: scale(0.85);
-    -ms-transform: scale(0.85);
-    transform: scale(0.85)
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85)
 }
 
 .app_screenshots_slides .center .single-shot {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1)
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  /* width: 50%;
+  height: 500px; */
+
 }
 
 .app-screenshots-area .owl-dot {
-    height: 11px;
-    width: 11px;
-    border: 2px solid #a49fba;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 6px;
-    margin-top: 50px;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #a49fba;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 6px;
+  margin-top: 50px;
 }
 
 .app-screenshots-area .owl-dot.active {
-    background-color: #fb397d;
-    border: transparent;
+  background-color: #fb397d;
+  border: transparent;
 }
 
 .app-screenshots-area .owl-dots {
-    height: 100%;
-    width: 100%;
-    text-align: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 /* --------------------------
 :: 9.0 Pricing Plan Area CSS
 -------------------------- */
-/*
+
+
 .pricing-plane-area {
     background: #f5f9fc;
 }
@@ -706,119 +771,118 @@ Featuring the Panino App CSS
 .single-price-plan.active .package-plan > h5,
 .single-price-plan.active .plan-button > a {
     color: #fff;
-} */
+}
 
 /* --------------------------
 Cleints Feedback Area CSS
 -------------------------- */
 
-.clients-feedback-area .client-name > h5 {
-    color: #5b32b4;
-    font-size: 22px;
-    margin-top: 5px;
+.clients-feedback-area .client-name>h5 {
+  color: #5b32b4;
+  font-size: 22px;
+  margin-top: 5px;
 }
 
-.clients-feedback-area .star-icon > i {
-    font-size: 18px;
-    color: #f1b922;
+.clients-feedback-area .star-icon>i {
+  font-size: 18px;
+  color: #f1b922;
 }
 
-.clients-feedback-area .client-description > p {
-    max-width: 1010px;
-    margin: auto;
-    margin-bottom: 15px;
-    font-size: 22px;
+.clients-feedback-area .client-description>p {
+  max-width: 1010px;
+  margin: auto;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
 
-.clients-feedback-area .client > i {
-    font-size: 48px;
-    color: #897ceb;
-    margin-bottom: 30px;
+.clients-feedback-area .client>i {
+  font-size: 48px;
+  color: #897ceb;
+  margin-bottom: 30px;
 }
 
-.clients-feedback-area .client-name > p {
-    color: #b5aec4;
+.clients-feedback-area .client-name>p {
+  color: #b5aec4;
 }
 
 .clients-feedback-area .slick-dots {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
 
 .clients-feedback-area .slick-dots li button {
-    width: 12px;
-    height: 12px;
-    text-indent: -999999999999999999999999px;
-    border: 3px solid #a49fba;
-    background-color: #fff;
-    border-radius: 50%;
-    margin: 5.5px;
-    outline: none;
+  width: 12px;
+  height: 12px;
+  text-indent: -999999999999999999999999px;
+  border: 3px solid #a49fba;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 5.5px;
+  outline: none;
 }
 
 .clients-feedback-area .slick-dots li.slick-active button {
-    background-color: #fb397d;
-    border-color: #fb397d;
+  background-color: #fb397d;
+  border-color: #fb397d;
 }
 
 .clients-feedback-area .slick-slide.client-thumbnail {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 129px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 129px;
 }
 
-
 .clients-feedback-area .slick-slide img {
-    display: block;
-    width: 80px !important;
-    height: 80px !important;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .clients-feedback-area .slick-slide.slick-current img {
-    width: 100px !important;
-    height: 100px !important;
+  width: 100px !important;
+  height: 100px !important;
 }
 
 .clients-feedback-area .slick-arrow {
-    position: absolute;
-    width: 30px;
-    background-color: #fff;
-    height: 100%;
-    text-align: center;
-    font-size: 24px;
-    color: #b5aec4;
-    display: block;
-    line-height: 550%;
-    left: 0;
-    z-index: 90;
-    cursor: pointer;
+  position: absolute;
+  width: 30px;
+  background-color: #fff;
+  height: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #b5aec4;
+  display: block;
+  line-height: 550%;
+  left: 0;
+  z-index: 90;
+  cursor: pointer;
 }
 
 .clients-feedback-area .slick-arrow.fa-angle-right {
-    left: auto;
-    right: 0;
-    top: 0;
+  left: auto;
+  right: 0;
+  top: 0;
 }
 
 /* --------------------------
@@ -826,82 +890,82 @@ Cleints Feedback Area CSS
 -------------------------- */
 
 .member-image {
-    margin-bottom: 30px;
-    border-radius: 30px 30px 30px 0;
-    position: relative;
-    z-index: 1;
+  margin-bottom: 30px;
+  border-radius: 30px 30px 30px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .member-image img {
-    border-radius: 30px 30px 30px 0;
+  border-radius: 30px 30px 30px 0;
 }
 
-.member-text > h4 {
-    font-size: 22px;
-    color: #5b32b4;
+.member-text>h4 {
+  font-size: 22px;
+  color: #5b32b4;
 }
 
-.member-text > p {
-    color: #b5aec4;
-    margin-bottom: 0;
+.member-text>p {
+  color: #b5aec4;
+  margin-bottom: 0;
 }
 
 .team-hover-effects {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(105, 75, 228, 0.8);
-    border-radius: 30px 30px 30px 0;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    -webkit-transition: all 500ms;
-    -o-transition: all 500ms;
-    transition: all 500ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(105, 75, 228, 0.8);
+  border-radius: 30px 30px 30px 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .single-team-member:hover .team-hover-effects {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .team-social-icon {
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.team-social-icon > a {
-    font-size: 14px;
-    color: #fff;
-    background: #9a81d7;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 10px 10px 10px 0;
-    display: block;
-    margin: 2.5px;
+.team-social-icon>a {
+  font-size: 14px;
+  color: #fff;
+  background: #9a81d7;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px 10px 10px 0;
+  display: block;
+  margin: 2.5px;
 }
 
 .single-team-member {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-        /* --------------------------
+/* --------------------------
          Footer Section CSS Page Across All pages
         -------------------------- */
 
@@ -920,7 +984,7 @@ Cleints Feedback Area CSS
   padding: 50px 50px;
 }
 
-.footer-social-icon > a > i:hover {
+.footer-social-icon>a>i:hover {
   color: #fb397d;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -946,7 +1010,7 @@ Cleints Feedback Area CSS
   color: #726a84;
 }
 
-.footer-social-icon > a .active {
+.footer-social-icon>a .active {
   background: #fb397d;
 }
 
@@ -962,13 +1026,11 @@ Cleints Feedback Area CSS
   margin-bottom: 0;
 }
 
-
 /*--------- How does it work CSS --------- */
 
 /* --------------------------
 Header Section Page 2 CSS
 -------------------------- */
-
 
 /* --------------------------
 how-it-works welcome Area CSS
@@ -983,7 +1045,7 @@ how-it-works welcome Area CSS
 
 /* Change this later to::after 1 */
 
-.oval {
+/* .oval {
   width: 100%;
   height: 100px;
   background: white;
@@ -991,7 +1053,7 @@ how-it-works welcome Area CSS
   bottom: -50px;
   z-index: 1;
   position: absolute;
-}
+} */
 
 .how-works-welcome-video {
   width: 100%;
@@ -1000,7 +1062,7 @@ how-it-works welcome Area CSS
   z-index: 9;
 }
 
-.faq-welcome-heading > h2 {
+.faq-welcome-heading>h2 {
   font-size: 50px;
   color: #fff;
   font-weight: 400;
@@ -1008,7 +1070,7 @@ how-it-works welcome Area CSS
   text-align: center;
 }
 
-.faq-welcome-heading > h4 {
+.faq-welcome-heading>h4 {
   font-size: 35px;
   color: #c6c6c6;
   font-weight: 400;
@@ -1112,31 +1174,19 @@ Video Area CSS Page 2/3
 FAQ Section Page 2 Area CSS
 -------------------------- */
 
-.faq-area {
-  padding: 100px 100px;
-}
-
 .faq-heading {
-  margin-top: 70px;
-}
-
-.faq-heading h2 {
-  font-size: 22px;
-  font-weight: 400;
-  color: black;
+  margin-top: 170px;
 }
 
 .faq-area h2 {
   font-size: 40px;
   color: black;
-  margin-bottom: 15px;
   text-align: center;
 }
 
-.faq-row > h4 {
+.faq-row>h4 {
   font-size: 25px;
   color: black;
-  margin-bottom: 15px;
 }
 
 .faq-row {
@@ -1144,7 +1194,6 @@ FAQ Section Page 2 Area CSS
 }
 
 .faq-row p {
-  margin-bottom: 0;
   color: black;
   font-size: 20px;
 }
@@ -1153,68 +1202,65 @@ FAQ Section Page 2 Area CSS
 Contact Secion CSS
 -------------------------- */
 
-.address-text > p,
-.phone-text > p,
-.email-text > p {
-    font-size: 18px;
-    margin-bottom: 10px;
+.address-text>p, .phone-text>p, .email-text>p {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.address-text > p > span,
-.phone-text > p > span,
-.email-text > p > span {
-    color: #5b32b4;
+.address-text>p>span, .phone-text>p>span, .email-text>p>span {
+  color: #5b32b4;
 }
 
 .footer-contact-area .line-shape {
-    margin-left: 0;
+  margin-left: 0;
 }
 
-.footer-contact-area .heading-text > p {
-    margin-top: 50px;
+.footer-contact-area .heading-text>p {
+  margin-top: 50px;
 }
 
 .footer-contact-area .heading-text {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 #name {
-    font-size: 18px;
-    padding: 15px 15px;
-    border-radius: 25px 25px 25px 0;
+  font-size: 18px;
+  padding: 15px 15px;
+  border-radius: 25px;
 }
 
 #email {
-    font-size: 18px;
-    padding: 15px 15px;
-    border-radius: 25px 25px 25px 0;
+  font-size: 18px;
+  padding: 15px 15px;
+  border-radius: 25px;
 }
 
 #message {
-    border-radius: 25px 25px 25px 0;
+  border-radius: 25px;
 }
 
 .btn.submit-btn {
-    background: #fb397d;
-    height: 48px;
-    min-width: 185px;
-    color: #ffffff;
-    font-weight: 500;
-    border-radius: 22px 25px 22px 0;
+  background: #fb397d;
+  height: 48px;
+  min-width: 185px;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 22px;
 }
 
 .btn.submit-btn:hover {
-    background: #5b32b4;
-    color: #fff;
-    -webkit-transition-duration: 500ms;
-    -o-transition-duration: 500ms;
-    transition-duration: 500ms;
+  background: #5b32b4;
+  color: #fff;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 
 .footer-contact-area {
-    background: #f5f9fc;
+  background: white;
+  padding: 100px 100px;
 }
 
-.footer-text > p {
-    margin-bottom: 50px;
+.footer-text>p {
+  margin-bottom: 50px;
 }

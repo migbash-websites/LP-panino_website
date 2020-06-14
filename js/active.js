@@ -15,14 +15,6 @@
 
     // :: 1.0 Owl Carousel Active Code
     if ($.fn.owlCarousel) {
-        $(".welcome_slides").owlCarousel({
-            items: 1,
-            loop: true,
-            autoplay: true,
-            smartSpeed: 1500,
-            nav: true,
-            navText: ["<i class='pe-7s-angle-left'</i>", "<i class='pe-7s-angle-right'</i>"]
-        });
         $(".app_screenshots_slides").owlCarousel({
             items: 1,
             loop: true,
@@ -39,7 +31,27 @@
                     items: 3
                 },
                 992: {
-                    items: 5
+                    items: 3
+                }
+            }
+        });
+        $(".clients-testimonials").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            smartSpeed: 800,
+            margin: 30,
+            center: true,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 3
+                },
+                992: {
+                    items: 1
                 }
             }
         });
@@ -90,13 +102,6 @@
         });
     }
 
-    if ($.fn.scrollDown) {
-        $.scrollDown({
-            scrollSpeed: 1500,
-            scrollText: '<i class="fas fa-angle-double-down fa-5x"></i>'
-        });
-    }
-
     // :: 5.0 CounterUp Active Code
     if ($.fn.counterUp) {
         $('.counter').counterUp({
@@ -138,10 +143,10 @@
 
     // :: 8.0 Sticky Active Code
     $window.on('scroll', function () {
-        if ($window.scrollTop() > 20) {
-            $('.header_area').addClass('sticky slideInDown');
+        if ($window.scrollTop() > 50) {
+            $('.header_area').addClass('sticky slideInUp');
         } else {
-            $('.header_area').removeClass('sticky slideInDown');
+            $('.header_area').removeClass('sticky slideInUp');
         }
     });
 
@@ -152,21 +157,27 @@
         });
     });
 
-    // :: 10.0 Switch Between Customer/Business Active code
-    $("#arrow-one").hover(function(){
-        $(".fa-angle-down").css("display", "none");
-        $('.fa-angle-double-down').css("display", "block");
-      } , function(){
-          $(".fa-angle-down").css("display", "block");
-          $('.fa-angle-double-down').css("display", "none");
-          });
+    // :: 10.0 Active Sections Height
+      // $("section").height($(window).height()-200);
+      $(window).resize(function(){
+          if (window.matchMedia('(max-width: 767px)').matches) {
+              $("section").css("height","auto");
+          }  else {
+              $("section").height($(window).height());
+          }
+      });
+
+    // :: 11.0 See the FAQ on click
+    $(".FAQ_ANS").hide()
+    $(".FAQ1").click(function(){
+      $(".FAQ_ANS").toggle('show'),1000;
+    });
 
 })(jQuery);
 
       // Javascript
 
       // --------- How-it-works page -------------
-
 
       // :: 11.0 Switch Between Customer/Business Active code
 
